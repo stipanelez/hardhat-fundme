@@ -8,21 +8,20 @@ I consider this way to be the best for learning.
 
 I hope my comments will help you when reading the code
 
-*[⌨️ (10:00:48) Lesson 7: Hardhat Fund Me](https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=36048s)*
+_[⌨️ (10:00:48) Lesson 7: Hardhat Fund Me](https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=36048s)_
 
 [Full Repo](https://github.com/smartcontractkit/full-blockchain-solidity-course-js)
 
 - [Hardhat Fund Me](#hardhat-fund-me)
 - [Getting Started](#getting-started)
+
   - [Requirements](#requirements)
   - [Quickstart](#quickstart)
-  - [Typescript](#typescript)
-    - [Optional Gitpod](#optional-gitpod)
+
 - [Usage](#usage)
   - [Testing](#testing)
     - [Test Coverage](#test-coverage)
 - [Deployment to a testnet or mainnet](#deployment-to-a-testnet-or-mainnet)
-  - [Scripts](#scripts)
   - [Estimate gas](#estimate-gas)
     - [Estimate gas cost in USD](#estimate-gas-cost-in-usd)
   - [Verify on etherscan](#verify-on-etherscan)
@@ -49,11 +48,10 @@ This project is apart of the Hardhat FreeCodeCamp video.
 ## Quickstart
 
 ```
-git clone https://github.com/PatrickAlphaC/hardhat-fund-me-fcc
-cd hardhat-fund-me-fcc
+git clone https://github.com/stipanelez/hardhat-fundme
+cd hardhat-fundme
 yarn
 ```
-
 
 # Usage
 
@@ -74,7 +72,6 @@ yarn hardhat test
 ```
 yarn hardhat coverage
 ```
-
 
 # Deployment to a testnet or mainnet
 
@@ -108,10 +105,9 @@ And you'll see and output file called `gas-report.txt`
 
 ### Estimate gas cost in USD
 
-To get a USD estimation of gas cost, you'll need a `COINMARKETCAP_API_KEY` environment variable. You can get one for free from [CoinMarketCap](https://pro.coinmarketcap.com/signup). 
+To get a USD estimation of gas cost, you'll need a `COINMARKETCAP_API_KEY` environment variable. You can get one for free from [CoinMarketCap](https://pro.coinmarketcap.com/signup).
 
-Then, uncomment the line `coinmarketcap: COINMARKETCAP_API_KEY,` in `hardhat.config.js` to get the USD estimation. Just note, everytime you run your tests it will use an API call, so it might make sense to have using coinmarketcap disabled until you need it. You can disable it by just commenting the line back out. 
-
+Then, uncomment the line `coinmarketcap: COINMARKETCAP_API_KEY,` in `hardhat.config.js` to get the USD estimation. Just note, everytime you run your tests it will use an API call, so it might make sense to have using coinmarketcap disabled until you need it. You can disable it by just commenting the line back out.
 
 ## Verify on etherscan
 
@@ -130,19 +126,21 @@ yarn hardhat verify --constructor-args arguments.js DEPLOYED_CONTRACT_ADDRESS
 `solhint` installation: [Documentation](https://protofire.github.io/solhint/#installation)
 
 To check linting / code formatting:
+
 ```
 yarn lint
 ```
-or, to fix: 
+
+or, to fix:
+
 ```
 yarn lint:fix
 ```
 
-# Formatting 
+# Formatting
 
 ```
 yarn format
 ```
-
 
 # Thank you!
